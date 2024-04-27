@@ -6,6 +6,7 @@ const cose = [
     "carote",
 ];
 
+const lista = document.getElementById("lista")
 
 let i = 0;
 while (i < cose.length) {
@@ -13,4 +14,8 @@ while (i < cose.length) {
     console.log(item, i);
     i++;
 
+    lista.innerHTML = lista.innerHTML + `<li>${item}</li>`
 }
+
+
+
